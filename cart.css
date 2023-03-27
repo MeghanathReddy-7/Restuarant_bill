@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.heading{
+    background-color: rgb(55, 51, 51);
+    color: white;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+}
+.CART a{
+    background-color: rgb(201, 125, 197);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: cursive;
+}
+.CART ion-icon{
+    vertical-align: bottom;
+    font-size: 25px;
+    padding-right: 5px;;
+}
+.products-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 25px;
+
+}
+.products-container ion-icon{
+    font-size: 25px;
+    background-color: red;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid lightgray;
+    margin: 0 auto;
+
+}
+.product-title{
+    width: 35%;
+    border-bottom: 1px solid lightgray;
+    
+}
+.price{
+    width: 22%;
+    border-bottom: 1px solid lightgray; 
+    display: flex;
+    align-items: center;
+    justify-content:safe;
+}
+.quantity{
+    width: 30%;
+    border-bottom: 1px solid lightgray; 
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.total{
+    width: 13%;
+     border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+} 
+.product{
+    width: 225px;
+    display: flex;
+    justify-content:baseline;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid lightgray;
+}
+.menutotalcontainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+.basketTotalTitle{
+    width: 31%;
+}
+.menutotal{
+    width: 13%;
+}
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.end{
+    text-align: center;
+    margin-top: 10px;
+    background-color: aquamarine;
+    width: 300px;
+    margin-left: 530px;
+    /* text-decoration: none; */
+    /* text-decoration:double; */
+    border-radius: 12px;
+    font-size: 20px;
+}

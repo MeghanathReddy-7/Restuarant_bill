@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<head>
+    <title>SPICE KITCHEN</title>
+</head>
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<style>
+    body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    nav ul {
+        height: 88px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 125px;
+        padding: 0 15px;
+    }
+
+    nav {
+        display: flex;
+        position: sticky;
+        top: 0px;
+    }
+
+    nav::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.4;
+    }
+
+    nav ul li {
+        list-style: none;
+        /* padding:0 45px; */
+    }
+
+    nav ul li a {
+        padding: 0 25px;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        /* padding:0 25px; */
+        color: white;
+        background-color: black;
+        border: 1.3rem;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 15px;
+        top: 25px;
+        /* border: 2px solid blue; */
+    }
+
+    .mid {
+        display: block;
+        margin: 30px auto;
+        width: 33%;
+        /* border: 2px solid blue; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+        /* border: 2px solid blue; */
+    }
+
+    .navbar {
+        display: inline-block;
+        /* border-color: black; */
+        background-color: rgb(196, 188, 77);
+        border-radius: 12px;
+        width: 600px;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: rgb(22, 1, 1);
+        text-decoration: none;
+        padding: 30px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .left img {
+        width: 250px;
+    }
+
+    .btn {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 10px 10px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 5px 15px;
+        border-radius: 10px;
+        border: 2px solid lightsalmon;
+    }
+
+    .btn:hover {
+        background-color: rgb(53, 52, 52);
+    }
+
+    .container {
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 200px 20px;
+        width: 30%;
+        padding: 75px;
+        float: right;
+    }
+
+    .sub {
+        float: left;
+        /* border: 2px solid white; */
+        /* border-radius: 10px; */
+        margin-left: 400px;
+        ;
+        width: 50%;
+        padding: 75px;
+    }
+
+    .sub h2 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 50px;
+        margin-left: 25px;
+        color: rgb(16 24 126);
+        display: inline-block;
+        position: relative;
+
+    }
+
+    .sub h2::after {
+        content: '';
+        height: 5px;
+        width: 50%;
+        background: #e6dedd;
+        position: absolute;
+        left: calc(33.33% - 10%);
+        bottom: -5px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 200px;
+        border: 2px solid grey;
+        margin: 3px auto;
+        border-radius: 10px;
+    }
+
+    .form-group {
+        margin-right: 200px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .container1 button {
+        display: block;
+        width: 100px;
+        margin: auto;
+        margin-left: 192px;
+    }
+
+    body{
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        background-image: url('https://media.istockphoto.com/photos/photo-blurred-of-coffee-shop-or-modern-library-abstract-bokeh-light-picture-id1010335754?b=1&k=20&m=1010335754&s=170667a&w=0&h=V7v5G7kLoCZCdg-ZzDNWkcwi6AqjbNUd91vnK7hKoR0=');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+   
+</style>
+
+<body>
+    
+    <nav>
+        <div class="logo">
+            <img src="https://i.pinimg.com/originals/f6/be/6d/f6be6d234fcc5cdfecec3bf3aa03e6d4.jpg" alt="">
+        </div>
+        <ul>
+            <li>
+                <a href="index.html">HOME</a>
+                <a href="menu.html" target="_blank">MENU</a>
+                <a href="spices.html" target="_blank">INDIAN SPICES</a>
+                <a href="about.html" target="_blank">ABOUT US</a>
+                
+            </li>
+
+        </ul>
+
+    </nav>
+    <div class="container1">
+        <div class="sub">
+            <h2>SPICE KITCHEN</h2>
+            <h1>Make a reservation in few steps!!</h1>
+            <!-- <form action="input.py"> -->
+            <div class="form-group">
+                <input type="text" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+        
+                <input type="number" placeholder="Number of Persons">
+            </div>
+            <div class="form-group">
+                <input type="date" placeholder="From">
+            </div>
+            <a href="submit.html" target="_blank"><button class="btn">Submit</button></a>
+            </form>
+
+        </div>
+        
+    </div>
+</body>
